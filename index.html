@@ -43,7 +43,7 @@
 
 <br>
 
-<!-- Prueba Overlay -->
+<!-- Overlay and box  -->
 
 <div class="overlay" id="overlay" style="display:none;"></div>
 <div class="box" id="box">
@@ -54,55 +54,25 @@ Bla bla balb lab labla bla blalb lab lab
 
 
 <form id="formulario1" method="post" action="#">
-<p>Koodos to <input type="text" id="name1"  placeholder="someone"> for <input type="text" placeholder="what"></p>
-<button type="submit"> ok </button>
+<p>Koodos to <input type="text" name="person" placeholder="someone"> for <input type="text" name="reason" placeholder="what"></p>
+<button type="submit" id="button"> ok </button>
+Your Koodos will be sent as 
 </form>
     <div class="latesttitle">View latest Koodos </div>
     <div class="boxcontent"> 
-
-        <table class="table">
-            <tr>
-            <th>Koodos to</th>
-            <th>Reason</th>
-            </tr>
-            <tr>
-            <td>Peter</td>
-            <td>Griffin</td>
-            </tr>
-            <tr>
-            <td>Lois</td>
-            <td>Griffin</td>
-            </tr>
-        </table>
-    </div>
+        <table class="list"></table>
+     </div>
 </p>
 </div>
 
-<!-- Prueba -->
+<!-- Overlay and box -->
 
-
-    <form id="formulario1" method="post" action="#">
-    <p>Koodos to <input type="text" id="name1"  placeholder="someone"> for <input type="text" placeholder="what"></p>
-    <p>Koodos to <input type="text" placeholder="someone"> for <input type="text" placeholder="what"></p>
-    <button type="submit"> ok </button>
-    </form>
-    <form>
-  <div class="input-prepend">
-    <div class="btn-group">...</div>
-    <input type="text">
-  </div>
-  <div class="input-append">
-    <input type="text">
-    <div class="btn-group">...</div>
-  </div>
-</form>
-    <p span=""> View latest Koodos </p>
     <div class="container">
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/koodos.js"></script>
 
-<!-- Overlay and box -->
+<!-- Script for overlay and box -->
 <script>
     $(function() {
     $('#activator').click(function(){
