@@ -53,10 +53,15 @@
 Bla bla balb lab labla bla blalb lab lab
 
 
-<form id="formulario1" method="post" action="#">
-<p>Koodos to <input type="text" name="person" placeholder="someone"> for <input type="text" name="reason" placeholder="what"></p>
-<button type="submit" id="button"> ok </button>
-Your Koodos will be sent as 
+<form id="formulario1" method="post" action="/koodos/index.php">
+<p>Koodos to <input type="text" name="name" placeholder="someone"> for <input type="text" name="address" placeholder="what"></p>
+<input type="submit" name="submit" value="Sent" id="button">
+<p>Koodos sent oK?
+
+<?php
+include_once('./input.php');
+?> </p>
+
 </form>
     <div class="latesttitle">View latest Koodos </div>
     <div class="boxcontent"> 
