@@ -20,7 +20,7 @@
             <img src="http://img707.imageshack.us/img707/3594/descarga1.png" class="img-circle">
           </div>
           <div class="span3"><p>Contenido balbal blab alb alba bla bal bal b alb alba bla bal bal b alb alba bla bal bal b alb alba bla bal balb a b alb alba bla bal bal b alb alba bla bal bal b alb alba bla bal bal </p>
-          <a class="btn" id="activator" href="#">Koodos to someone<i class="icon-thumbs-up"></i></a>
+          <a class="btn" id="activator" href="#modal1" role="button" data-toggle="modal">Koodos to someone<i class="icon-thumbs-up"></i></a>
           </div>
           <div class="span3"><p>Contenido balbal blab alb alba bla bal bal b alb alba bla bal bal b alb alba bla bal bal b alb alba bla bal balb a b alb alba bla bal bal b alb alba bla bal bal b alb alba bla bal bal</p>
           <a class="btn" href="#">Koods to a team<i class="icon-thumbs-up"></i></a> 
@@ -36,10 +36,10 @@
         <img src="http://img707.imageshack.us/img707/3594/descarga1.png" class="img-circle">
       </div>
       <div class="span3"><p>Contenido balbal blab alb alba bla bal bal b alb alba bla bal bal b alb alba bla bal bal b alb alba bla bal balb a b alb alba bla bal bal b alb alba bla bal bal b alb alba bla bal bal </p>
-        <a class="btn" href="#">Kooals<i class="icon-thumbs-up"></i></a>
+        <a href="#myModal" role="button" class="btn" data-toggle="modal">Kooals<i class="icon-thumbs-up"></i></a>
       </div>
       <div class="span3"><p>Contenido balbal blab alb alba bla bal bal b alb alba bla bal bal b alb alba bla bal bal b alb alba bla bal balb a b alb alba bla bal bal b alb alba bla bal bal b alb alba bla bal bal</p>
-      <a class="btn" href="#">Send Koods to<i class="icon-thumbs-up"></i></a> 
+      <a class="btn" href="#myModal" role="button" data-toggle="modal">Send Koods to<i class="icon-thumbs-up"></i></a> 
       </div>
       <div class ="span2">
         <img src="http://img707.imageshack.us/img707/3594/descarga1.png" class="img-circle">
@@ -47,6 +47,89 @@
     </div>
 
 <br>
+
+<!-- Modal1 -->
+
+<div id="modal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3 id="myModalLabel">Koodos to someone</h3>
+  </div>
+    <div class="modal-body">
+      <p>
+
+      Bla bla balb lab labla bla blalb lab lab
+
+        <form id="formulario1" method="post" action="/koodos/index.php">
+        <p>Koodos to <input type="text" name="name" placeholder="someone"> for <input type="text" name="address" placeholder="what"></p>
+        <input type="submit" name="submit" value="Sent" id="button">
+        <p>Koodos sent ok?
+
+        <?php
+        include_once('./input.php');
+
+        ?> 
+        </p>
+      </form>
+      <div class="latesttitle">View latest Koodos </div>
+        <div class="boxcontent"> 
+          <table class="list">
+            <?php 
+            include_once('./getdata.php');
+            echo $result;
+            ?>
+          </table>
+        </div>
+        </p>
+      </div>
+    
+  <div class="modal-footer">
+    <button class="btn btn-primary">Save changes</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3 id="myModalLabel">Koals</h3>
+  </div>
+  <div class="modal-body">
+    <p>
+
+blBABLALBALBLAL ABLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b
+BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b 
+ BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b
+
+<br>
+ bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b
+BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b 
+ BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla 
+<br>
+
+<br>
+ bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b
+BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b 
+ BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla 
+<br>
+
+<br>
+ bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b
+BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b 
+ BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla 
+<br>
+
+
+
+    </p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary">Save changes</button>
+  </div>
+</div>
+
+<!-- Hasta aquí la prueba del modal -->
 
 <!-- Overlay and popup for first block -->
 
