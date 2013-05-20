@@ -1,8 +1,7 @@
 
 $(document).ready(function() { 
-	/* 
-
-//localStorage, if a user has included previously his name, it will appear here.
+	
+	/*localStorage, if a user has included previously his name, it will appear here.
 
 	var name = localStorage.getItem("name1");
 	$("#name1").val(name); 
@@ -13,7 +12,7 @@ $(document).ready(function() {
 		localStorage.setItem("name1", name);
 	});*/
 
-//Toggle for View latest¿
+//Toggle for View latest non-button
 
  	$(".boxcontent").hide();
 
@@ -23,12 +22,14 @@ $(document).ready(function() {
 
 //Add Name and Reason to table
 
-	$("#button").click(function() {
+	/*$("#button").click(function() {
 		var toAdd = $("input[name=name]").val(),
-			toAdz = $("input[name=address]").val();
+			toAdz = $("input[name=address]").val(); */
 
-		$(".list").append('<tr><td class="firstResultName">' + "<b>Koodos</b> to " + "<b>" + toAdd + "</b>" + " for" + '</td><td class="firstResultReason">' + toAdz + "</td></tr>");
+	$("#button").click(function(){
+		$(".list").append("$result");
+	};
+
 	});
-});
 //Add new things above this
 

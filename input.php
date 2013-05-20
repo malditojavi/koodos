@@ -1,7 +1,8 @@
 <?php 
-//the example of inserting data with variable from HTML form
-//input.php
+
+//Connect with the db
 mysql_connect('localhost', 'root', 'root');
+//Connect with the table in that db
 mysql_select_db('employees');
 
 if (isset($_POST['name']) && isset($_POST['address'])) {

@@ -8,9 +8,13 @@
     <link href="css/custom.css" rel="stylesheet" media="screen">
   </head>
   <body>
+    
+    <!-- Main container  -->
     <div class="container">
       <h1 class="text-center">Koodos</h1>
       <h2><div class="text-center"> Blabla bla bl abl alba alb abla blab alb </div></h2>
+        
+      <!-- First row  -->
         <div class="row">
           <div class ="span2 offset1">
             <img src="http://img707.imageshack.us/img707/3594/descarga1.png" class="img-circle">
@@ -25,8 +29,9 @@
             <img src="http://img707.imageshack.us/img707/3594/descarga1.png" class="img-circle">
           </div>
         </div>
-    
-    <div class="row">
+
+    <!-- Second row  -->
+      <div class="row">
       <div class ="span2 offset1">
         <img src="http://img707.imageshack.us/img707/3594/descarga1.png" class="img-circle">
       </div>
@@ -43,7 +48,7 @@
 
 <br>
 
-<!-- Overlay and box  -->
+<!-- Overlay and popup for first block -->
 
 <div class="overlay" id="overlay" style="display:none;"></div>
 <div class="box" id="box">
@@ -56,21 +61,30 @@ Bla bla balb lab labla bla blalb lab lab
 <form id="formulario1" method="post" action="/koodos/index.php">
 <p>Koodos to <input type="text" name="name" placeholder="someone"> for <input type="text" name="address" placeholder="what"></p>
 <input type="submit" name="submit" value="Sent" id="button">
-<p>Koodos sent oK?
+<p>Koodos sent ok?
 
 <?php
 include_once('./input.php');
+
 ?> </p>
 
 </form>
     <div class="latesttitle">View latest Koodos </div>
+    
     <div class="boxcontent"> 
-        <table class="list"></table>
+        <table class="list">
+          <?php 
+          include_once('./getdata.php');
+          echo $result;
+
+          ?>
+
+        </table>
      </div>
 </p>
 </div>
 
-<!-- Overlay and box -->
+<!-- End//Overlay and popup for first section -->
 
     <div class="container">
     <script src="http://code.jquery.com/jquery.js"></script>
