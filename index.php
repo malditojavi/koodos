@@ -48,7 +48,7 @@
 
 <br>
 
-<!-- Modal1 -->
+<!-- Modal Koodos to someone -->
 
 <div id="modal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
@@ -67,11 +67,10 @@
 
         <?php
         include_once('./input.php');
-
         ?> 
         </p>
       </form>
-      <div class="latesttitle">View latest Koodos </div>
+      <div class="latesttitle">View latest Koodos</div>
         <div class="boxcontent"> 
           <table class="list">
             <?php 
@@ -88,7 +87,7 @@
   </div>
 </div>
 
-<!-- Modal -->
+<!-- Modal Kooals -->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -96,32 +95,10 @@
   </div>
   <div class="modal-body">
     <p>
-
 blBABLALBALBLAL ABLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b
 BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b 
- BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b
-
-<br>
- bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b
-BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b 
- BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla 
-<br>
-
-<br>
- bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b
-BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b 
- BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla 
-<br>
-
-<br>
- bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b BLA BLl bla bla bal bla bBLA BLl bla bla bal bla b
-BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b 
- BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla 
-<br>
-
-
-
-    </p>
+BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b
+   </p>
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
@@ -131,65 +108,10 @@ BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BLA BLl bla bla bal bla b BL
 
 <!-- Hasta aquí la prueba del modal -->
 
-<!-- Overlay and popup for first block -->
-
-<div class="overlay" id="overlay" style="display:none;"></div>
-<div class="box" id="box">
-<a class="boxclose" id="boxclose"></a>
-<h1>Koodos to someone</h1>
-<p>
-Bla bla balb lab labla bla blalb lab lab
-
-
-<form id="formulario1" method="post" action="/koodos/index.php">
-<p>Koodos to <input type="text" name="name" placeholder="someone"> for <input type="text" name="address" placeholder="what"></p>
-<input type="submit" name="submit" value="Sent" id="button">
-<p>Koodos sent ok?
-
-<?php
-include_once('./input.php');
-
-?> </p>
-
-</form>
-    <div class="latesttitle">View latest Koodos </div>
-    
-    <div class="boxcontent"> 
-        <table class="list">
-          <?php 
-          include_once('./getdata.php');
-          echo $result;
-
-          ?>
-
-        </table>
-     </div>
-</p>
-</div>
-
-<!-- End//Overlay and popup for first section -->
-
     <div class="container">
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/koodos.js"></script>
-
-<!-- Script for overlay and box -->
-<script>
-    $(function() {
-    $('#activator').click(function(){
-        $('#overlay').fadeIn('fast',function(){
-            $('#box').animate({'top':'160px'},500);
-        });
-    });
-    $('#boxclose').click(function(){
-        $('#box').animate({'top':'-400px'},500,function(){
-            $('#overlay').fadeOut('fast');
-        });
-    });
- 
-});
-</script>
 
   </body>
 </html>
