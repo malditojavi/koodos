@@ -1,5 +1,5 @@
 
-$(document).ready(function() { 
+$(document).ready(function() {
 	
 	/*localStorage, if a user has included previously his name, it will appear here.
 
@@ -13,12 +13,30 @@ $(document).ready(function() {
 	});*/
 
 //Toggle for View latest non-button
+	var loaded = false;
+  $("#testclick").click(function(e) {
+  	e.preventDefault();
+  	
+   	//$(this).next(".boxcontent").get("http://localhost:8888/koodos/getdata.php").slideToggle(500);
+   	if (loaded == true){
+		 		$("#testajax").toggle();
+		}
+		else {
+   		$.get("http://localhost:8888/koodos/getdata.php", function(data){
+				$("#testajax").html(data);
+				loaded = true;
+  		});
+   	}
+  });
 
- 	$(".boxcontent").hide();
+  //Toogle for General Koodos Dashboard
+ $("#clickGeneralKoodos").click(function(){
+ 	$("#clickGeneralKoodos").toogle();
+ });
 
-  $(".latesttitle").click(function() { 
-   $(this).next(".boxcontent").slideToggle(500);
-	});
+
+});
+
 
 //Add Name and Reason to table
 
@@ -26,10 +44,10 @@ $(document).ready(function() {
 		var toAdd = $("input[name=name]").val(),
 			toAdz = $("input[name=address]").val(); */
 
-	$("#button").click(function(){
+	/*$("#button").click(function(){
 		$(".list").append("$result");
 	};
 
-	});
+	}); */
 //Add new things above this
 
